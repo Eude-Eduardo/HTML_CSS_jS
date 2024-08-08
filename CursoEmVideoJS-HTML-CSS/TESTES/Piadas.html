@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX004</title>
+<Style>body{
+   font: normal 30pt Arial;
+}
+    
+</Style>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt("Qual Seu nome?")
+        var idade = window.prompt("Qual é a sua idade?")
+        var Casa_de_Adultos = idade >= 18?document.write(`Seja bem vindo a casa de adultos.com <Strong>${nome}</strong>.`):document.write(`${nome}, Voçê é um Safado menor de idade`) 
+        /* Testa se a variavél nome é maior ou igual a 18, se for ele vai exibir uma mensagem de boas vindas, se não ele envia uma mensagem de advertencia.*/
+             
+       /* document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Em maiúsculas seu nome é <em>${nome.toUpperCase()}</em>.<br>`)
+        document.write(`E em minúsculas é <Strong>${nome.toLowerCase()}</Strong>.`)*/
+    </script>
+</body>
+</html>

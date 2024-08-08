@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em html</title>
+</head>
+<body>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Este video está hospedado no meu proprio servidor</p>
+
+    <video controls width="500px" autoplay loop>
+        <source src="midias/Meu video mp4 leve.mp4" type="video/mp4">
+
+        <source src="midias/Meu video.mp4" type="video/mp4">
+
+        <source src="midias/Meu Video webM.webm" type="video/webm">
+
+        <source src="midias/Meu video ogv.ogv" type="video/ogv">
+        
+        <p>Seu navegador não suporta nenhum tipo de video <a href="midias/Meu video mp4 leve.mp4" download="">clique para fazer o download</a></p>
+    </video>
+    <!--MP4 MkV M4V OGV WEBM-->
+    <h1>Vídeos do Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=1du5k5QB6UvW1NXt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/330207644?h=6a9e658aaf&autoplay=1" width="500" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

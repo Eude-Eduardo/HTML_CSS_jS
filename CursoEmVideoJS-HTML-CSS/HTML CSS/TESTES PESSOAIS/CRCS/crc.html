@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Coracao Movendo</title>
+  <style>
+    /* Estilizar o coração */
+   .heart {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 100px;
+      color: red;
+      animation: move 2s infinite;
+    }
+
+    /* Animacao do coração */
+    @keyframes move {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Criar o coração -->
+  <span class="heart">&hearts;</span>
+
+  <script>
+    // Nenhum JavaScript necessário para essa animação
+  </script>
+</body>
+</html>

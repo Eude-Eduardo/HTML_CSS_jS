@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAM</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do Carro <input type="number" name="TXTvel" id="txtvel"><strong>Km/hr</strong>
+    <input type="button" value="Verificar" onclick="Vel()">
+    <div id="Res">Resultado</div>
+    <script>
+         function Vel(){
+            var txtv = document.getElementById("txtvel")
+            var res = document.getElementById("Res")
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade é de <Strong>${vel}Km/hr</Strong></p>`
+            if(vel > 45){
+                res.innerHTML += `<p>Você está <Strong>MULTADO</Strong> por excesso de velocidade.<p>`
+            }else{
+                res.innerHTML += `<p>Dirija <strong>sempre</Strong> com Sinto de segurança</p>`
+            }
+
+
+            
+        }
+    </script>
+</body>
+</html>

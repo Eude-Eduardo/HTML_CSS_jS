@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <Style>
+        body{
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+        p,div{
+            color: white;
+            font: Normal 30pt columbia;
+        }h1{
+            color: white;
+            font: bolder 40pt Columbia;
+        }
+        
+        
+    </Style>
+</head>
+<body>
+    <h1>Iniciando DOM</h1>
+    <p class="oi">Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript</p>
+    <div id="p2">Clique Aqui</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1]
+        var div = window.document.getElementById("p2")
+        //div.style.background = 'green'
+        //corpo.style.backgroundColor = "blue"
+       // div.innerText = "Clique Aqui dnv"
+        //window.document.getElementById("p2").innerText = "oi"
+        //var d = window.document.getElementById("p2").innerHTML = "2"
+       // var t = document.querySelector("p.oi")
+        //t.style.background = "blue"
+       // window.document.write(p1.innerText)
+
+    </script>
+</body>
+</html>

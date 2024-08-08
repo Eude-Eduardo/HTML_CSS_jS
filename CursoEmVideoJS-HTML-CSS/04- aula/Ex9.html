@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro</h1>
+    <H2><strong>Qual seu país?</strong></H2>
+    <input type="text" name="saber" id="saber">
+    <input type="button" value="Estrangeiro ou Brasileiro" onclick="eob()">
+    <div id="Res">Resultado</div>
+    <script>
+        function eob(){
+            var br1 = document.getElementById("saber")
+            var res = document.getElementById("Res")
+            var BR = (br1.value)
+           
+           if(BR != "brasil" ){
+                res.innerHTML = `<p>Você vive em ${BR}</p>`
+                res.innerHTML += `<p>Então você é Estrangeiro</p>`                
+            }else{
+                BR= "Brasil"
+                res.innerHTML = `<p>Você vive em ${BR}</p>`
+                res.innerHTML += `Então vocé é Brasileiro`
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
